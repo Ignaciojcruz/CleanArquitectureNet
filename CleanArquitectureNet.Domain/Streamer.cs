@@ -1,10 +1,12 @@
-﻿namespace CleanArquitectureNet.Domain
+﻿using CleanArquitectureNet.Domain.Common;
+
+namespace CleanArquitectureNet.Domain
 {
-    public class Streamer
-    {
-        public int Id { get; set; }
+    public class Streamer : BaseDomainModel
+    {        
         public string? Nombre { get; set; } 
         public string? Url { get; set; }
+        public List<Video>? Videos { get; set; }
 
     }
 }
