@@ -1,0 +1,56 @@
+# Archivos temporales y de salida
+**/bin/
+**/obj/
+**/TestResults/
+
+# Archivos de configuración específicos del entorno
+**/appsettings.Development.json
+**/appsettings.Production.json
+
+# Archivos de la base de datos
+**/.db/
+**/bin/Release/netcoreapp3.1/database.sqlite
+
+# Archivos de Visual Studio
+**/.vs/
+**/bin/Debug/
+**/bin/Release/
+
+# Archivos de NuGet
+**/packages/
+
+# Archivos de terceros
+**/node_modules/
+
+# Archivos de registro
+**/logs/
+
+# Archivos de caché
+**/cache/
+
+# Archivos de prueba
+**/TestResults/
+
+# Otros archivos
+*.suo
+*.user
+*.sln.DotSettings.user
+
+# Archivos específicos de Visual Studio Code
+**/.vscode/
+**/launch.json
+**/tasks.json
+
+# Archivos específicos de Git
+**/.git/
+**/.gitignore
+
+# Archivos de configuración de Github
+**/.github/
+
+# Archivos de Docker
+**/Dockerfile
+**/docker-compose.yml
+
+# Archivos de Kubernetes
+**/k8s/
