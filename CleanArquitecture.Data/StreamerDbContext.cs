@@ -34,5 +34,7 @@ namespace CleanArquitectureNet.Data
 
         public DbSet<Streamer>? Streamers { get; set; }
         public DbSet<Video>? Videos { get; set; }
+
+        public DbSet<Actor> Actores { get; set; }
     }
 }

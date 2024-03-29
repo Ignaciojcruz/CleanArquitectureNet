@@ -3,11 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArquitectureNet.ConsoleApp", "CleanArquitectureNet.ConsoleApp\CleanArquitectureNet.ConsoleApp.csproj", "{9FA751AB-3F2B-4F40-95AF-15FB7A17417B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArquitectureNet.Infrastructure", "CleanArquitecture.Data\CleanArquitectureNet.Infrastructure.csproj", "{19A22146-BE97-4A71-86D3-41F5645EF75D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArquitectureNet.Data", "CleanArquitecture.Data\CleanArquitectureNet.Data.csproj", "{19A22146-BE97-4A71-86D3-41F5645EF75D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArquitectureNet.Domain", "CleanArquitectureNet.Domain\CleanArquitectureNet.Domain.csproj", "{66846DF7-DEBD-4B2C-95C4-D69CAFD211D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArquitectureNet.Domain", "CleanArquitectureNet.Domain\CleanArquitectureNet.Domain.csproj", "{66846DF7-DEBD-4B2C-95C4-D69CAFD211D0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6D8B7C73-BB5B-4F43-9125-3521D93159BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{D5A2CEB5-8AB3-46B0-8931-2156824EE65D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{DF7B46FB-E8EB-4AB7-AD5A-3CA28801649C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{1BB9A3AA-75F8-4BCD-8D7A-E94454CBEB69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FC72733A-B8D7-4411-A704-43AEE09F67DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{CD05176B-19BB-41B8-818F-685AAB971FC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArquitectureNet.API", "CleanArquitectureNet.API\CleanArquitectureNet.API.csproj", "{51901B36-D7C0-4EBC-9484-0A5E876E34EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArquitectureNet.Application", "CleanArquitectureNet.Application\CleanArquitectureNet.Application.csproj", "{F06CAB77-924C-4312-A03E-B45EE1A257A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9FA751AB-3F2B-4F40-95AF-15FB7A17417B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9FA751AB-3F2B-4F40-95AF-15FB7A17417B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9FA751AB-3F2B-4F40-95AF-15FB7A17417B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9FA751AB-3F2B-4F40-95AF-15FB7A17417B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19A22146-BE97-4A71-86D3-41F5645EF75D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19A22146-BE97-4A71-86D3-41F5645EF75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19A22146-BE97-4A71-86D3-41F5645EF75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,9 +37,26 @@ Global
 		{66846DF7-DEBD-4B2C-95C4-D69CAFD211D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66846DF7-DEBD-4B2C-95C4-D69CAFD211D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66846DF7-DEBD-4B2C-95C4-D69CAFD211D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51901B36-D7C0-4EBC-9484-0A5E876E34EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51901B36-D7C0-4EBC-9484-0A5E876E34EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51901B36-D7C0-4EBC-9484-0A5E876E34EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51901B36-D7C0-4EBC-9484-0A5E876E34EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F06CAB77-924C-4312-A03E-B45EE1A257A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06CAB77-924C-4312-A03E-B45EE1A257A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06CAB77-924C-4312-A03E-B45EE1A257A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06CAB77-924C-4312-A03E-B45EE1A257A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19A22146-BE97-4A71-86D3-41F5645EF75D} = {CD05176B-19BB-41B8-818F-685AAB971FC1}
+		{66846DF7-DEBD-4B2C-95C4-D69CAFD211D0} = {FC72733A-B8D7-4411-A704-43AEE09F67DF}
+		{1BB9A3AA-75F8-4BCD-8D7A-E94454CBEB69} = {6D8B7C73-BB5B-4F43-9125-3521D93159BF}
+		{FC72733A-B8D7-4411-A704-43AEE09F67DF} = {6D8B7C73-BB5B-4F43-9125-3521D93159BF}
+		{CD05176B-19BB-41B8-818F-685AAB971FC1} = {6D8B7C73-BB5B-4F43-9125-3521D93159BF}
+		{51901B36-D7C0-4EBC-9484-0A5E876E34EC} = {1BB9A3AA-75F8-4BCD-8D7A-E94454CBEB69}
+		{F06CAB77-924C-4312-A03E-B45EE1A257A8} = {FC72733A-B8D7-4411-A704-43AEE09F67DF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B44DCDAA-612A-4C0E-93DB-0C40F2D5CBA6}
