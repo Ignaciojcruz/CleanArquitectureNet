@@ -1,6 +1,6 @@
 ﻿using CleanArquitectureNet.Domain;
 
-namespace CleanArquitectureNet.Application.Features.Videos.Querys.GetVideosList
+namespace CleanArquitectureNet.Application.Features.Videos.Queries.GetVideosList
 {
     public class VideosVm
     {

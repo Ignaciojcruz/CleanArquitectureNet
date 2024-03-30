@@ -2,7 +2,7 @@
 using CleanArquitectureNet.Application.Contracts.Persistence;
 using MediatR;
 
-namespace CleanArquitectureNet.Application.Features.Videos.Querys.GetVideosList
+namespace CleanArquitectureNet.Application.Features.Videos.Queries.GetVideosList
 {
     public class GetVideosListQueryHandler : IRequestHandler<GetVideosListQuery, List<VideosVm>>
     {

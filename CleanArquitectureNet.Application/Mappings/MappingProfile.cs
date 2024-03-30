@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using CleanArquitectureNet.Application.Features.Videos.Querys.GetVideosList;
+using CleanArquitectureNet.Application.Features.Streamers.Commands.CreateStreamer;
+using CleanArquitectureNet.Application.Features.Videos.Queries.GetVideosList;
 using CleanArquitectureNet.Domain;
 
 namespace CleanArquitectureNet.Application.Mappings
@@ -9,6 +10,7 @@ namespace CleanArquitectureNet.Application.Mappings
         public MappingProfile() 
         {
             CreateMap<Video, VideosVm>();
+            CreateMap<CreateStreamerCommand, Streamer>();
         }
     }
 }
