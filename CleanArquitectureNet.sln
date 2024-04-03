@@ -19,9 +19,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FC72733A-B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{CD05176B-19BB-41B8-818F-685AAB971FC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArquitectureNet.API", "CleanArquitectureNet.API\CleanArquitectureNet.API.csproj", "{51901B36-D7C0-4EBC-9484-0A5E876E34EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArquitectureNet.API", "CleanArquitectureNet.API\CleanArquitectureNet.API.csproj", "{51901B36-D7C0-4EBC-9484-0A5E876E34EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArquitectureNet.Application", "CleanArquitectureNet.Application\CleanArquitectureNet.Application.csproj", "{F06CAB77-924C-4312-A03E-B45EE1A257A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArquitectureNet.Application", "CleanArquitectureNet.Application\CleanArquitectureNet.Application.csproj", "{F06CAB77-924C-4312-A03E-B45EE1A257A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArquitectureNet.Identity", "CleanArquitectureNet.Identity\CleanArquitectureNet.Identity.csproj", "{9091AED2-36EF-446D-8EA3-3A2F81DFF556}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{F06CAB77-924C-4312-A03E-B45EE1A257A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F06CAB77-924C-4312-A03E-B45EE1A257A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F06CAB77-924C-4312-A03E-B45EE1A257A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9091AED2-36EF-446D-8EA3-3A2F81DFF556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9091AED2-36EF-446D-8EA3-3A2F81DFF556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9091AED2-36EF-446D-8EA3-3A2F81DFF556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9091AED2-36EF-446D-8EA3-3A2F81DFF556}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{CD05176B-19BB-41B8-818F-685AAB971FC1} = {6D8B7C73-BB5B-4F43-9125-3521D93159BF}
 		{51901B36-D7C0-4EBC-9484-0A5E876E34EC} = {1BB9A3AA-75F8-4BCD-8D7A-E94454CBEB69}
 		{F06CAB77-924C-4312-A03E-B45EE1A257A8} = {FC72733A-B8D7-4411-A704-43AEE09F67DF}
+		{9091AED2-36EF-446D-8EA3-3A2F81DFF556} = {CD05176B-19BB-41B8-818F-685AAB971FC1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B44DCDAA-612A-4C0E-93DB-0C40F2D5CBA6}
