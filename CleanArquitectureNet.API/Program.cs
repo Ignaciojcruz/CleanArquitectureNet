@@ -1,6 +1,7 @@
 using CleanArquitectureNet.Infrastructure;
 using CleanArquitectureNet.Application;
 using CleanArquitectureNet.Identity;
+using CleanArquitectureNet.API.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +33,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseAuthentication();
 
