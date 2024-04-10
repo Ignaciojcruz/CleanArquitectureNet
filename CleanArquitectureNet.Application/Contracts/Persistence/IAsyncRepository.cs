@@ -27,5 +27,11 @@ namespace CleanArquitectureNet.Application.Contracts.Persistence
 
         Task DeleteAsync(T entity);
 
+        void AddEntity(T entity); 
+
+        void UpdateEntity(T entity);
+
+        void DeleteEntity(T entity);
+
     }
 }
