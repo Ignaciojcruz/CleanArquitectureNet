@@ -23,6 +23,7 @@ namespace CleanArquitectureNet.Infrastructure
 
             services.AddScoped<IVideoRepository, VideoRepository>();
             services.AddScoped<IStreamerRepository, StreamerRepository>();
+            services.AddScoped<IDirectorRepository, DirectorRepository>();
 
             services.Configure<EmailSettings>(c => configuration.GetSection("EmailSettings"));
             services.AddTransient<IEmailService, EmailService>();

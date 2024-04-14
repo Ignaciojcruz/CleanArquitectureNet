@@ -12,9 +12,11 @@ namespace CleanArquitectureNet.Infrastructure.Repositories
 
         private IVideoRepository _videoRepository;
         private IStreamerRepository _streamerRepository;
+        private IDirectorRepository _directorRepository;
 
         public IVideoRepository VideoRepository => _videoRepository ??= new VideoRepository(_context);
         public IStreamerRepository StreamerRepository => _streamerRepository ??= new StreamerRepository(_context);
+        public IDirectorRepository DirectorRepository => _directorRepository ??= new DirectorRepository(_context);
 
         public UnitOfWork(StreamerDbContext context)
         {

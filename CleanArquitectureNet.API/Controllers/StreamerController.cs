@@ -1,6 +1,8 @@
-﻿using CleanArquitectureNet.Application.Features.Streamers.Commands.CreateStreamer;
+﻿using CleanArquitectureNet.Application.Features.Directors.Queries.GetDirectorsList;
+using CleanArquitectureNet.Application.Features.Streamers.Commands.CreateStreamer;
 using CleanArquitectureNet.Application.Features.Streamers.Commands.DeleteStreamer;
 using CleanArquitectureNet.Application.Features.Streamers.Commands.UpdateStreamer;
+using CleanArquitectureNet.Application.Features.Streamers.Queries.GetStreamersList;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -17,6 +19,18 @@ namespace CleanArquitectureNet.API.Controllers
         public StreamerController(IMediator mediator)
         {
             _mediator = mediator;
+        }
+
+        [HttpGet(Name = "GetStreamers")]
+        [Authorize]
+        [ProducesResponseType(typeof(IEnumerable<StreamersVm>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<IEnumerable<StreamersVm>>> GetStreamers()
+        {
+            var query = new GetStreamersListQuery();
+
+            var streamers = await _mediator.Send(query);
+
+            return Ok(streamers);
         }
 
         [HttpPost(Name = "CreateStreamer")]
